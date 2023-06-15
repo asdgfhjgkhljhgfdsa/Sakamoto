@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index(new)</title>
+	<link rel="stylesheet" href="Monday major/style.css">
+	<link rel="stylesheet" href="hppts://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body style="height: 100%">
+	
+	<header>
+	<a href="#" class="brand">In honor of.</a>
+		
+		<div class="menu-btn">	</div>
+		
+		
+		
+		
+		<div class="navigation">
+		<div class="navigaition-items">
+			
+			
+	
+			<!--<a href="#">About</a>
+			<a href="#">Explore</a>
+			<a href="#">Gallery</a>
+			<a href="#">Contact</a>-->
+			
+			</div>
+		
+		</div>
+	</header>
+	
+	
+	
+	<section class="home"style="color: beige">
+		 h3>세상은 소리로 가득 차 있어요</h3>
+		<video class="video-slide" src="vivideo.mp4" autoplay muted loop></video>
+		
+	<div class="content">
+		<h1> Ryuichi Sakamoto <br><br> <span><h3>세상은 소리로 차 있어요</h3></span></h1>
+		<p><h5>세상은 소리로 가득 차 있어요</h5>
+		우리는 날마다 소리에 둘러싸여 살지만 보통은 그런 소리들을 음악으로 생각하지 않은데 귀 기울여 들어보면 재밌어요 음악적으로도 흥미있고 그 소리들을 내 음악에 넣고 싶어요
+
+ </p>
+		
+		<a href="#">Read More </a> 
+		<a href="../new web/2번째 페이지 그리드.html"></a>
+		</div>
+		<div class="media-icons">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-twitter"></i></a>
+		</div>
+		
+		<div class="slider-navigation">
+		<div class="nav-btn active"></div>
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+		<div class="nav-btn"></div>
+		</div>
+		
+	</section>
+	
+	<script type="text/javascript">
+	// javascript of responsive navigation menu
+		const menuBtn=document.querySelector(".menu-btn");
+		const navigation=document.querySelector(".navigation");
+		
+		
+		
+		menuBtn.addEventListener("click",()=> {
+			menuBtn.classList.toggle("active");
+			navigation.classList.toggle("active");
+		});
+		
+		
+		//Javascript for video slider navigation
+		const btns= document.querySelectorAll(".nav-btn");
+		
+		var sliderNav =function(manual){
+			btns.forEach((btn)=>{
+				btn.classList.remove("active")
+			});
+			btns[manual].classList.add("active");
+		}
+		
+		btns.forEach((btn,i)=>{
+			btn.addEventListener("click",()=>{
+				sliderNav(i);
+			});
+		});
+		
+		
+		
+		
+		
+	</script>
+	
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
